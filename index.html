@@ -2,19 +2,33 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home work № 11</title>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home work № 11</title>
+    <link rel="icon" type="image/png" href="/goit-js-hw-11/assets/my_icon-BrbFLLFK.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <script type="module" crossorigin src="/goit-js-hw-11/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CWpK90tU.css">
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-BHIBSaoF.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/vendor-CWKLx11g.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-11/assets/index-CqS11hfG.css">
 </head>
 
 <body>
 
-  <main>
-    <h1>Домашняя робота</h1>
-  </main>
+    <main>
+        <form class="form">
+            <label>
+                <input type="text" name="search-text" placeholder="Search images..." required>
+            </label>
+            <button type="submit">Search</button>
+        </form>
+        <!-- Лоадер -->
+        <div id="loader" class="loader hidden">Loading images, please wait<span class="dots"></span></div>
+
+        <div id="gallery" class="gallery"></div>
+    </main>
 
 </body>
 
